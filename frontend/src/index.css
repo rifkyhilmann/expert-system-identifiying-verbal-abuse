@@ -1,0 +1,58 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.login-container {
+    width: 90%;
+    max-width: 400px;
+    height: max-content;
+    min-height: 460px;
+}
+
+.content {
+    width: calc(100% - 256px);
+    margin-left: 256px;
+}
+.content-active {
+    width: 100%;
+    margin-left: 0;
+}
+.sidebar-active {
+    display: none;
+}
+.table-container {
+    max-height: 550px; /* Atur tinggi maksimum sesuai kebutuhan */
+    overflow-y: auto; /* Scroll vertikal */
+    overflow-x: auto; /* Scroll horizontal */
+}
+.checbox-gejala {
+    max-height: 500px;
+}
+.sidebar-siswa {
+    width: 98%;
+    height: 99%;
+}
+
+.menu-active {
+    background-color: #6e7a8497;
+}
+
+/* .sidebar-menu:hover {
+    background-color: rgba(211, 211, 211, 0.411);
+    transition: ease-in-out 0.3s;
+} */
+
+@media (min-width: 0px) and (max-width: 650px) {
+    .sidebar-container {
+        display: none;
+    }
+    .content {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .sidebar-active{
+        display: flex;
+        position: fixed;
+    }
+}
